@@ -1,0 +1,203 @@
+html,
+body {
+    margin: 0;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: max(1vw, 1rem);
+}
+
+html {
+    height: 100%;
+    background-color: black;
+}
+
+body {
+    min-height: 100%;
+    position: relative;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    padding-left: 0.5rem
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+a {
+    color: white;
+    border-color: white;
+}
+
+a:active {
+    color: lightgrey;
+    border-color: lightgrey;
+}
+
+a:visited {
+    color: dimgray;
+    border-color: dimgray;
+}
+
+code {
+    font-size: 0.8rem;
+}
+
+.absolute-fill {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+}
+
+.background {
+    background: url("../images/final.png") no-repeat center center fixed;
+    background-size: cover;
+    filter: blur(0.5rem);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: -1;
+}
+
+.column {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 0) 0%, rgba(0, 0, 0, 0.5011494252873563) 5%, rgba(0, 0, 0, 0.4988505747126437) 95%, rgba(0, 0, 0, 0) 100%);
+    margin: 0 auto;
+    padding: 0 5vw;
+    height: fit-content;
+    width: max(66vw, 19rem);
+}
+
+.content-box {
+    /* border-top: 3px solid white; */
+    padding: 1rem 0.5rem 5rem;
+}
+
+.top-box {
+    border-top: none;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.content-box.img-links {
+    padding: 0rem 0rem 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.content-box.stats {
+    display: flex;
+    justify-content: space-around;
+}
+
+.stats-item {
+    text-align: center;
+}
+
+.stats-svg {
+    margin: 1.5rem 0rem 0.5rem;
+    width: 3rem;
+    height: 3rem;
+    filter: invert();
+}
+
+.button {
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0.25rem 0.5rem;
+    margin: 0rem 0rem 0rem 0.5rem;
+    border: 1px solid;
+    border-radius: 0.75rem;
+}
+
+.final {
+    border: 1px solid white;
+}
+
+.button:active,
+.button:visited {
+    color: white;
+    border-color: white;
+}
+
+.feature-grid-container {
+    display: grid;
+    grid-template-columns: 50% auto;
+    gap: 2.5rem 1rem;
+}
+
+.feature-grid-item {
+    border-top: 1px solid white;
+    padding-top: 0.5rem;
+    max-height: 15rem;
+}
+
+.feature-grid-item.fill-img {
+    border: 1px solid white;
+    border-radius: 2px;
+    padding: none;
+}
+
+.tpm-grid-container {
+    display: grid;
+    grid-template-columns: 50% auto;
+    gap: 0rem 1rem
+}
+
+.text-grid {
+    display: grid;
+    grid-template-columns: 10rem auto;
+}
+
+.fill-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.fill-img img {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.normal-btn,
+.striangle-btn,
+.softlights-btn {
+    background: none;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.normal-btn:disabled,
+.striangle-btn:disabled,
+.softlights-btn:disabled {
+    color: dimgrey;
+    border-color: dimgrey;
+}
+
+.normal-btn:active,
+.striangle-btn:active,
+.softlights-btn:active {
+    background: hsla(0, 0%, 100%, 0.25);
+}
+
+.contact {
+    text-align: center;
+    font-size: 0.5rem;
+    color: grey;
+    margin-bottom: 0.5rem;
+}
+
+.contact>a {
+    color: grey;
+}
