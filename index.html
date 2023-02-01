@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="assets/css/stylesheetRC.css">
     <script src="assets/js/imageSwitch.js"></script>
     <script src="assets/js/languageSwitch.js"></script>
+    <script src="assets/js/widthScaling.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
 </head>
 
@@ -20,17 +21,6 @@
     <div class="absolute-fill">
         <div class="background"></div>
     </div>
-    <div class="lang-background"></div>
-    <form class="lang-container">
-        <label for="lang-switch">
-            <span lang="de">Sprache</span>
-            <span lang="en">Language</span>
-        </label>
-        <select id="lang-switch">
-            <option value="de" selected>Deutsch</option>
-            <option value="en">English</option>
-        </select>
-    </form>
     <div class="absolute-fill column">
         <h1>夜の日本市</h1>
         <div class="content-box top-box">
@@ -162,8 +152,8 @@
         </div>
         <div class="content-box">
             <h2><span lang="de">Zusätzliche Funktionen</span><span lang="en">Additional Features</span></h2>
-            <div class="feature-grid-container">
-                <div class="feature-grid-item">
+            <div class="features">
+                <div class="features-item">
                     <b>Normal Mapping</b>
                     <p>
                         <span lang="de">Um Höhenunterschiede auf Oberflächen zu fälschen ist eine der besten
@@ -183,19 +173,21 @@
                         </div>
                         <div><span lang="de">Code Position</span><span lang="en">Code location</span>:</div>
                         <div>
-                            <code>rt/materials/material(cooktorrance)<br>rt/solids/solid(triangle)<br>rt/integrators/recraytrace</code>
+                            <code>rt/materials/material (cooktorrance)<br>rt/solids/solid (triangle)<br>rt/integrators/recraytrace</code>
                         </div>
                         <div><span lang="de">Implementiert von</span><span lang="en">Implemented by</span>:</div>
                         <div>Anton Wittig</div>
                     </div>
                 </div>
-                <div class="feature-grid-item fill-img">
+                <div class="features-item fill-img">
                     <img id="normal-img" src="./assets/images/normal-on-example.png">
                 </div>
-                <div class="feature-grid-item fill-img">
+            </div>
+            <div class="features rev">
+                <div class="features-item fill-img">
                     <img id="striangle-img" src="./assets/images/striangle-on-example.png">
                 </div>
-                <div class="feature-grid-item">
+                <div class="features-item">
                     <b>Smooth Triangles</b>
                     <p>
                         <span lang="de">Da die Kanten zwischen benachbarten Dreiecken, je nach Winkel zwischen diesen,
@@ -219,7 +211,9 @@
                         <div>Tobias Dick</div>
                     </div>
                 </div>
-                <div class="feature-grid-item">
+            </div>
+            <div class="features">
+                <div class="features-item">
                     <b><span lang="de">Weiche Punkt- und gerichtete Lichtquellen</span><span lang="en">Soft Point &
                             Directional Lights</span></b>
                     <p>
@@ -244,10 +238,10 @@
                         <div>Tobias Dick</div>
                     </div>
                 </div>
-                <div class="feature-grid-item fill-img">
+                <div class="features-item fill-img">
                     <img id="softlights-img" src="./assets/images/softlights-on-example.png">
                 </div>
-                <div class="feature-grid-item">
+                <div class="features-item">
                     <b><span lang="de">Beschleunigungen</span><span lang="en">Accelerations</span></b>
                     <p>
                         <span lang="de">Um unseren Code zu beschleunigen implementierten wir eine binnendifferenzierte
@@ -265,7 +259,7 @@
                         <div>Tobias Dick</div>
                     </div>
                 </div>
-                <div class="feature-grid-item">
+                <div class="features-item">
                     <b>Cook-Torrance BRDF</b>
                     <p>
                         <span lang="de">Wir entschieden uns dazu eine BRDF zu nutzen, die realistischer als die häufig
@@ -338,20 +332,26 @@
             <a href="https://github.com/AntonWittig">Anton Wittig</a>
         </div>
     </div>
+    <div class="lang-background"></div>
+    <form class="lang-container">
+        <label for="lang-switch">
+            <span lang="de">Sprache</span>
+            <span lang="en">Language</span>
+        </label>
+        <br>
+        <select id="lang-switch">
+            <option value="de" selected>Deutsch</option>
+            <option value="en">English</option>
+        </select>
+    </form>
     <script>
         imageSwitcher("normal-img", "normal-on", "normal-off", "normal");
         imageSwitcher("striangle-img", "striangle-on", "striangle-off", "striangle");
         imageSwitcher("softlights-img", "softlights-on", "softlights-off", "softlights");
         languageSwitcher();
+        widthScaler2Col("features-item", 600)
+        marginWidthScaler("absolute-fill.column", 600)
     </script>
 </body>
-
-</html>
-
-</html>
-
-</html>
-
-</html>
 
 </html>

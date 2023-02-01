@@ -66,33 +66,6 @@ code {
     z-index: -1;
 }
 
-.lang-background {
-    top: 0;
-    right: 0;
-    position: absolute;
-    padding: 1rem;
-    background: rgba(0, 0, 0, 0.5);
-    filter: blur(0.5rem);
-}
-
-.lang-container {
-    top: 0;
-    right: 0;
-    position: absolute;
-    padding: 1rem;
-    font-size: 0.8rem;
-}
-
-#lang-switch {
-    margin-left: 0.5rem;
-    background-color: rgba(0, 0, 0, 0.5);
-    background: none;
-    border: 2px solid white;
-    border-radius: 5px;
-    color: white;
-    text-decoration: none;
-}
-
 .column {
     background: rgb(2, 0, 36);
     background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0.5) 95%, rgba(0, 0, 0, 0) 100%);
@@ -122,10 +95,13 @@ code {
 .content-box.stats {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .stats-item {
+    display: inline-block;
     text-align: center;
+    min-width: 7rem;
 }
 
 .stats-svg {
@@ -154,33 +130,40 @@ code {
     border-color: white;
 }
 
-.feature-grid-container {
-    display: grid;
-    grid-template-columns: 50% auto;
-    gap: 2.5rem 1rem;
+.features {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-.feature-grid-item {
+.features.rev {
+    flex-wrap: wrap-reverse;
+}
+
+.features-item {
     border-top: 1px solid white;
+    display: inline-block;
+    width: max(49%, 19rem);
+    max-width: 100%;
+    margin-bottom: 2.5rem;
     padding-top: 0.5rem;
-    max-height: 15rem;
 }
 
-.feature-grid-item.fill-img {
+.features-item.fill-img {
     border: 1px solid white;
     border-radius: 2px;
-    padding: none;
+    padding: 0;
+}
+
+.text-grid {
+    display: grid;
+    grid-template-columns: 10rem auto;
 }
 
 .tpm-grid-container {
     display: grid;
     grid-template-columns: 50% auto;
     gap: 0rem 1rem
-}
-
-.text-grid {
-    display: grid;
-    grid-template-columns: 10rem auto;
 }
 
 .fill-img {
@@ -227,4 +210,32 @@ code {
 
 .contact>a {
     color: grey;
+}
+
+.lang-background {
+    top: 0;
+    right: 0;
+    position: absolute;
+    padding: 0.5rem 1rem;
+    background: rgba(0, 0, 0, 0.5);
+    filter: blur(0.5rem);
+}
+
+.lang-container {
+    top: 0;
+    right: 0;
+    position: absolute;
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+    text-align: right;
+}
+
+#lang-switch {
+    margin: 0.5rem 0rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    background: none;
+    border: 2px solid white;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
 }
