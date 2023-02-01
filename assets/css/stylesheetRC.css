@@ -66,9 +66,36 @@ code {
     z-index: -1;
 }
 
+.lang-background {
+    top: 0;
+    right: 0;
+    position: absolute;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.5);
+    filter: blur(0.5rem);
+}
+
+.lang-container {
+    top: 0;
+    right: 0;
+    position: absolute;
+    padding: 1rem;
+    font-size: 0.8rem;
+}
+
+#lang-switch {
+    margin-left: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    background: none;
+    border: 2px solid white;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+}
+
 .column {
     background: rgb(2, 0, 36);
-    background: linear-gradient(90deg, rgba(2, 0, 36, 0) 0%, rgba(0, 0, 0, 0.5011494252873563) 5%, rgba(0, 0, 0, 0.4988505747126437) 95%, rgba(0, 0, 0, 0) 100%);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0.5) 95%, rgba(0, 0, 0, 0) 100%);
     margin: 0 auto;
     padding: 0 5vw;
     height: fit-content;

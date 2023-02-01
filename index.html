@@ -11,17 +11,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="assets/css/stylesheetRC.css">
-    <script src="assets/js/scriptRC.js"></script>
+    <script src="assets/js/imageSwitch.js"></script>
+    <script src="assets/js/languageSwitch.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
 </head>
 
 <body>
     <div class="absolute-fill">
         <div class="background"></div>
     </div>
+    <div class="lang-background"></div>
+    <form class="lang-container">
+        <label for="lang-switch">
+            <span lang="de">Sprache</span>
+            <span lang="en">Language</span>
+        </label>
+        <select id="lang-switch">
+            <option value="de" selected>Deutsch</option>
+            <option value="en">English</option>
+        </select>
+    </form>
     <div class="absolute-fill column">
         <h1>夜の日本市</h1>
         <div class="content-box top-box">
-            Rendering competition entry of team Amaura<br>by Tobias Dick and Anton Wittig
+            <span lang="de">Rendering Competition Abgabe von Team Amaura<br>von Tobias Dick und Anton Wittig</span>
+            <span lang="en">Rendering competition entry of team Amaura<br>by Tobias Dick and Anton Wittig</span>
         </div>
         <div class="content-box">
             <img class="final" src="./assets/images/final.png" width="100%" height="auto" alt="final rendered image">
@@ -35,33 +49,70 @@
             </div>
         </div>
         <div class="content-box">
-            <h2>Concept</h2>
-            <p>The year is 1850. It's almost night. Today will be the first red moon since you moved to this town, but the sun has not fully set yet. You can see a few last drops of light on the horizon in the distance. You left from your work at the rice
-                field later than anyone else, thinking you will get a raise if you keep working overtime. But what you're seeing now surprises you. Not only is the owner of your favorite ramen stall not waiting for you, it seems like the whole town is
-                empty. You can't find a single soul. Where is everyone? What will you do now? It is your decision to make, so choose wisely.</p>
-            <p>The concept of our image is the empty street of an old japanese village at dawn.<br> When reading the rules for the rendering competition, we very quickly agreed on creating an outdoor scene in an eastern setting. Initially, we were inspired
-                by nighttime photographs of side streets in modern japanese cities, with small, highly detailed buildings and neon lights. However, finding free 3D assets for our setting proved to be very difficult, so we transformed our scene into a
-                less modern setting, while still keeping our core concept.</p>
+            <h2><span lang="de">Konzept</span><span lang="en">Concept</span></h2>
+            <p>
+                <span lang="de">Wir schreiben das Jahr 1850. Es ist beinahe Nacht. Heute wird der erste Blutmond
+                    stattfinden, seit du in diese Stadt gezogen
+                    bist, aber noch ist die Sonne nicht ganz untergegangen. Du kannst ein paar letzte Lichtstrahlen am
+                    Horizont erblicken. Du hast deine Arbeit auf dem Reisfeld später als alle anderen verlassen mit dem
+                    Hintergedanken du würdest eine Lohnerhöhung bekommen, wenn du weitere
+                    Überstunden machst. Aber der Anblick den du nun siehts, überrascht dich. Nicht nur, dass der
+                    Besitzer deines
+                    Lieblings-Ramenstandes nicht bereits auf dich wartet, es
+                    scheint die ganze Stadt leer zu sein. Du findest keine Menschenseele, so viel du auch suchst. Wo
+                    sind alle? Was
+                    sollst du jetzt tun?
+                    Du musst dich entscheiden, also wähle weise.</span>
+                <span lang="en">The year is 1850. It's almost night. Today will be the first red moon since you moved to
+                    this town, but the sun has not fully set yet. You can see a few last drops of light on the horizon
+                    in the distance. You left from
+                    your work at the rice field later than anyone else, thinking you will get a raise if you keep
+                    working overtime. But what you're seeing now surprises you. Not only is the owner of your favorite
+                    ramen stall not waiting for you, it seems
+                    like the whole town is empty. You can't find a single soul. Where is everyone? What will you do now?
+                    It is your decision to make, so choose wisely.</span>
+            </p>
+            <p>
+                <span lang="de">Das Konzept unseres Bildes ist eine verlassene Straße eines alten japanischen Dorfes bei
+                    Sonnenuntergang.<br> Als wir die Regeln der Rendering Competition gelesen haben, waren wir uns
+                    schnell einig, dass wir eine Scene im Freien in einem asiatisch, östlichen Setting erstellen wollen.
+                    Ursprünglich wurden wir von nächtlichen Straßen-Fotografien in modernen japanischen Städte
+                    inspiriert, welche kleine, detailreiche Gebäude mit Neonbeleuchtung zeigen. Da wir jedoch kaum 3D
+                    Modelle für dieses Setting auffindbar waren wandelten wir unsere Scene in ein weniger modernes
+                    Setting ab, behielten unser Grundkonzept jedoch bei.</span>
+                <span lang="en">The concept of our image is the empty street of an old japanese village at dawn.
+                    <br> When reading the rules for the rendering competition, we very quickly agreed on creating an
+                    outdoor scene in an eastern setting. Initially, we were inspired by nighttime photographs of side
+                    streets in modern japanese cities, with
+                    small, highly detailed buildings and neon lights. However, finding free 3D assets for our setting
+                    proved to be very difficult, so we transformed our scene into a less modern setting, while still
+                    keeping our core concept.</span>
+            </p>
         </div>
         <div class="content-box stats">
             <div class="stats-item">
-                Resolution<br>
+                <span lang="de">Auflösung</span>
+                <span lang="en">Resolution</span><br>
                 <img class="stats-svg" src="./assets/images/desktop-solid.svg"><br> 1920x1080
             </div>
             <div class="stats-item">
-                Faces<br>
+                <span lang="de">Flächen</span>
+                <span lang="en">Faces</span><br>
                 <img class="stats-svg" src="./assets/images/shapes-solid.svg"><br> 216.021
             </div>
             <div class="stats-item">
-                Light Sources<br>
+                <span lang="de">Lichtquellen</span>
+                <span lang="en">Light Sources</span><br>
                 <img class="stats-svg" src="./assets/images/lightbulb-solid.svg"><br> 15
             </div>
             <div class="stats-item">
-                Samples<br>
+                <span lang="de">Proben</span>
+                <span lang="en">Samples</span><br>
                 <img class="stats-svg" src="./assets/images/rotate-right-solid.svg"><br> 400
             </div>
             <div class="stats-item">
-                Render Time<br>
+                <span lang="de">Renderzeit</span>
+                <span lang="en">Render Time</span><br>
                 <img class="stats-svg" src="./assets/images/clock-solid.svg"><br>3h 13min
             </div>
             <div class="stats-item">
@@ -71,30 +122,70 @@
         </div>
         <div class="content-box">
             <h2>Scene</h2>
-            We composed our scene in Blender by mainly using freely available 3D models and modifying them to our needs. Additionally, we added some own models such as the crates, the ground and the grass. We planned the scene construction beforehand by drawing and
-            conceptualizing our rough ideas. We wanted to create a long road with a view of the houses at the sides. With a small alley on one side of the road. We also wanted to focus the viewer on one central piece in the scene, which became the ramen
-            stall. We placed the temple at the end of the road and used smaller objects to decorate the scene wherever we saw fit. Then, we used freely available textures to texture the entire scene, as most of the models we used came without their own
-            textures. The materials were assigned in our own renderer, since the material formats that are provided by the Wavefront OBJ standard did not give us enough control over the material properties. Finally, we added three point-lights, a directional
-            light, and multiple area lights to set the mood of our scene, and added an environment map to simulate a night sky.
+            <span lang="de">Wir haben unsere Scene in Blender konstruiert indem wir hauptsächlich frei verfügbare 3D
+                Modelle benutzt haben und diese für unsere Zwecke angepasst haben. Zusätzlich haben wir einige Modelle
+                selbst erstellt wie zum Beispiel die Kisten, den Boden und das Gras. Wir haben die Scene im vorhinein
+                geplant indem wir unsere groben Ideen mit Zeichnungen zu Papier gebracht und detailiert durchgesprochen
+                haben. Wir wollten eine lange Straße mit Blick auf die Häuser auf einer Seite entwerfen. Zudem sollte
+                auf der fokussierten Straßenseite eine kleine Gasse eingefügt werden. Den Fokus wollten wir spezial ein
+                zentrales Objekt setzen, welches letztenendes der Ramenstand geworden ist. Wir platzierten des weiteren
+                einen Tempel an das Ende der Straße und nutzten kleinere Objekte als Dekoration wo immer wir sie passend
+                fanden. Wir benutzten dann frei verfügbare Texturen in der gesamten Scene, da die meisten Modelle die
+                wir verwendet haben ohnehin ohne eigene Texturen zu finden waren. Die Materialien wurden erst in unserem
+                eigenen Renderer zugewiesen, da die Materialformate des Wavefront OBJ Standards uns nicht genug
+                Kontroller über die Materialeigenschaften gaben. Zuletzt fügten wir drei Punktlichtquellen, eine
+                gerichtete Lichtquelle und mehrere Flächenlichtquellen hinzu um die gezielte Stimmung unserer Scene zu
+                erreichen. Zusätzlich fügten wir der Scene eine Umgebungstextur hinzu um den Nachthimmel zu
+                simulieren.</span>
+            <span lang="en">We composed our scene in Blender by mainly using freely available 3D models and modifying
+                them to our needs.
+                Additionally, we added some own models such as the crates, the ground and the grass. We planned the
+                scene
+                construction beforehand by drawing and conceptualizing our rough ideas. We wanted to create a long road
+                with a view of
+                the houses at the sides. With a small alley on one side of the road. We also wanted to focus the viewer
+                on one central
+                piece
+                in the scene, which became the ramen stall. We placed the temple at the end of the road and used smaller
+                objects to
+                decorate the scene wherever we saw fit. Then, we used freely available textures to texture the entire
+                scene, as most of
+                the
+                models we used came without their own textures. The materials were assigned in our own renderer, since
+                the material
+                formats that are provided by the Wavefront OBJ standard did not give us enough control over the material
+                properties.
+                Finally,
+                we added three point-lights, a directional light, and multiple area lights to set the mood of our scene,
+                and added an
+                environment map to simulate a night sky.</span>
         </div>
         <div class="content-box">
-            <h2>Additional Features</h2>
+            <h2><span lang="de">Zusätzliche Funktionen</span><span lang="en">Additional Features</span></h2>
             <div class="feature-grid-container">
                 <div class="feature-grid-item">
                     <b>Normal Mapping</b>
-                    <p>To fake height differences in a surface one of the best ways is using normal mapping. By perturbing the normals at ray hit points a displaced surface can be simulated. The use of this can especially be seen on the walls of the buildings
-                        (see the image on the right)</p>
+                    <p>
+                        <span lang="de">Um Höhenunterschiede auf Oberflächen zu fälschen ist eine der besten
+                            Methoden</span> Normal Mapping. Indem man die Normalenvektoren an Ray Treffpunkten verzerrt kann eine hervorgehobene Oberfläche simuliert werden. Dies ist vor allem an unseren Wänden auffällig (siehe
+                        rechts)
+                        </span>
+                        <span lang="en">To fake height differences in a surface one of the best ways is using normal
+                            mapping. By perturbing the normals at ray hit points a displaced surface can be simulated.
+                            The use of this can especially be seen on
+                            the walls of the buildings (see the image on the right)</span>
+                    </p>
                     <div class="text-grid">
                         <div>Normal Mapping:</div>
                         <div>
                             <button id="normal-on" class="normal-btn">ON</button>
                             <button id="normal-off" class="normal-btn">OFF</button>
                         </div>
-                        <div>Code location:</div>
+                        <div><span lang="de">Code Position</span><span lang="en">Code location</span>:</div>
                         <div>
                             <code>rt/materials/material(cooktorrance)<br>rt/solids/solid(triangle)<br>rt/integrators/recraytrace</code>
                         </div>
-                        <div>Implemented by:</div>
+                        <div><span lang="de">Implementiert von</span><span lang="en">Implemented by</span>:</div>
                         <div>Anton Wittig</div>
                     </div>
                 </div>
@@ -106,33 +197,50 @@
                 </div>
                 <div class="feature-grid-item">
                     <b>Smooth Triangles</b>
-                    <p>As the edge between neighboring triangles can be sharp depending on the angle between them and raise awareness to the single polygons, we introduce smooth triangles. For them the normal of a hit is the interpolation between the normal
-                        vectors assigned to the triangles points.</p>
+                    <p>
+                        <span lang="de">Da die Kanten zwischen benachbarten Dreiecken, je nach Winkel zwischen diesen,
+                            scharf aussehen können und somit auf einzelne Polygone aufmerksam machen können, haben wir
+                            Smooth Triangles eingefügt. Durch diese wird der Normalenvektor einse Ray Treffers zwischen
+                            den Normalenvektoren der Ecken des Dreicks interpoliert.</span>
+                        <span lang="en">As the edge between neighboring triangles can be sharp depending on the angle
+                            between them and raise awareness to the single polygons, we introduce smooth triangles. For
+                            them the normal of a hit is the interpolation
+                            between the normal vectors assigned to the triangles points.</span>
+                    </p>
                     <div class="text-grid">
                         <div>Smooth triangles:</div>
                         <div>
                             <button id="striangle-on" class="striangle-btn">ON</button>
                             <button id="striangle-off" class="striangle-btn">OFF</button>
                         </div>
-                        <div>Code location:</div>
+                        <div><span lang="de">Code Position</span><span lang="en">Code location</span>:</div>
                         <div><code>rt/solids/striangle</code></div>
-                        <div>Implemented by:</div>
+                        <div><span lang="de">Implementiert von</span><span lang="en">Implemented by</span>:</div>
                         <div>Tobias Dick</div>
                     </div>
                 </div>
                 <div class="feature-grid-item">
-                    <b>Soft Point & Directional Lights</b>
-                    <p>Normal point lights usually cast very sharp shadows, which is not realistic. To achieve higher realism we implemented soft point lights which cast smooth shadows.<br>As light coming from the sky is usually almost parallel it can be
-                        simulated well by implementing a directional light.</p>
+                    <b><span lang="de">Weiche Punkt- und gerichtete Lichtquellen</span><span lang="en">Soft Point &
+                            Directional Lights</span></b>
+                    <p>
+                        <span lang="de">Normale Punktlichtquellen werfen üblicherweise sehr scharfkantige Schatten, die
+                            nicht realistisch sind. Um höheren Realismus zu erreichen haben wir weiche Lichtquellen
+                            implementiert, die weiche Schatten werfen.<br>Da Licht aus dem Himmel fast parallel auf die
+                            Erde fällt kann es virtuell mit einer gerichteten Lichtquelle simuliert werden.</span>
+                        <span lang="en">Normal point lights usually cast very sharp shadows, which is not realistic. To
+                            achieve higher realism we implemented soft point lights which cast smooth shadows.<br>As
+                            light coming from the sky is usually almost parallel it can be
+                            simulated well by implementing a directional light.</span>
+                    </p>
                     <div class="text-grid">
                         <div>Soft Lights:</div>
                         <div>
                             <button id="softlights-on" class="softlights-btn">ON</button>
                             <button id="softlights-off" class="softlights-btn">OFF</button>
                         </div>
-                        <div>Code location:</div>
+                        <div><span lang="de">Code Position</span><span lang="en">Code location</span>:</div>
                         <div><code>rt/lights/pointlight<br>rt/lights/directional</code></div>
-                        <div>Implemented by:</div>
+                        <div><span lang="de">Implementiert von</span><span lang="en">Implemented by</span>:</div>
                         <div>Tobias Dick</div>
                     </div>
                 </div>
@@ -140,69 +248,92 @@
                     <img id="softlights-img" src="./assets/images/softlights-on-example.png">
                 </div>
                 <div class="feature-grid-item">
-                    <b>Accelerations</b>
-                    <p>To accelerate our code we implemented a binned Surface Area Heuristic for the construction of our BVH.
-                        <br>Additionally we activated multithreading using the openmp package to parallelize the raytracing.
+                    <b><span lang="de">Beschleunigungen</span><span lang="en">Accelerations</span></b>
+                    <p>
+                        <span lang="de">Um unseren Code zu beschleunigen implementierten wir eine binnendifferenzierte
+                            Objerflächenheuristik für die Erstellung unserer BVH<br>Zusätzlich aktivierten wir
+                            multithreading mithilfe des openmp Pakets um unseren Raytracing zu parallelisieren.</span>
+                        <span lang="en">To accelerate our code we implemented a binned Surface Area Heuristic for the
+                            construction of our BVH.
+                            <br>Additionally we activated multithreading using the openmp package to parallelize the
+                            raytracing.</span>
                     </p>
                     <div class="text-grid">
-                        <div>Code location:</div>
+                        <div><span lang="de">Code Position</span><span lang="en">Code location</span>:</div>
                         <div><code>rt/groups/bvh<br>rt/renderer</code></div>
-                        <div>Implemented by:</div>
+                        <div><span lang="de">Implementiert von</span><span lang="en">Implemented by</span>:</div>
                         <div>Tobias Dick</div>
                     </div>
                 </div>
                 <div class="feature-grid-item">
                     <b>Cook-Torrance BRDF</b>
-                    <p>We decided to use a BRDF that is more realistic than the often used Phong BRDF, which is why we chose to implement the Cook-Torrance BRDF for our image. It also allowed us to use roughness maps, which are usually included with most
-                        textures.
+                    <p>
+                        <span lang="de">Wir entschieden uns dazu eine BRDF zu nutzen, die realistischer als die häufig
+                            genutzte Phong BRDF ist, weshalb wir die Cook-Torrance BRDF für unser Bild implementierten.
+                            Das erlaubte uns Roughness Maps zu verwenden, welche üblicherweise in den meisten Texturen
+                            enthalten sind.</span>
+                        <span lang="en">We decided to use a BRDF that is more realistic than the often used Phong BRDF,
+                            which is why we chose to implement the Cook-Torrance BRDF for our image. It also allowed us
+                            to use roughness maps, which are usually included with most
+                            textures.</span>
                     </p>
                     <div class="text-grid">
-                        <div>Code location:</div>
+                        <div><span lang="de">Code Position</span><span lang="en">Code location</span>:</div>
                         <div><code>rt/materials/cooktorrance</code></div>
-                        <div>Implemented by:</div>
+                        <div><span lang="de">Implementiert von</span><span lang="en">Implemented by</span>:</div>
                         <div>Tobias Dick</div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="content-box">
-            <h2>Third-Party Assets</h2>
+            <h2><span lang="de">Inhalte von Dritten</span><span lang="en">Third-Party Assets</span></h2>
             <div class="tpm-grid-container">
-                <h4>Models</h4>
-                <h4>Textures</h4>
+                <h4><span lang="de"></span>Modelle</span><span lang="en">Models</span></h4>
+                <h4><span lang="de">Texturen</span><span lang="en">Textures</span></h4>
                 <div>
-                    <a href="https://de.3dexport.com/free-3dmodel-village-pack-232810.htm">Houses</a>,
-                    <a href="https://www.cgtrader.com/free-3d-models/architectural/other/kaminarimon-thunder-gate">Temple
-                        Gate</a>,
-                    <a href="https://www.cgtrader.com/free-3d-models/architectural/door/a-piece-of-wooden-door-in-chinese-style">Temple
-                        Doors</a>,
-                    <a href="https://www.turbosquid.com/3d-models/3d-model-thank-you-gift-chinese-new-year-no-texture-1843938#">Paper
-                        Lantern</a>,
-                    <a href="https://sketchfab.com/3d-models/japanese-wall-1f8ba4fa5635443f82d17a7cc118b811">Stone
-                        Wall</a>,
-                    <a href="https://www.cgtrader.com/free-3d-models/food/miscellaneous/japanese-ramen-stall">Ramen
-                        Stall</a>,
-                    <a href="https://free3d.com/3d-model/bench-with-backrest-80150.html">Bench</a>,
-                    <a href="https://www.cgtrader.com/free-3d-models/plant/pot-plant/collection-plant-vol-140">Potted
-                        Plant</a>
+                    <a href="https://de.3dexport.com/free-3dmodel-village-pack-232810.htm"><span
+                            lang="de">Häuser</span><span lang="en">Houses</span></a>,
+                    <a href="https://www.cgtrader.com/free-3d-models/architectural/other/kaminarimon-thunder-gate"><span
+                            lang="de">Tempeltor</span><span lang="en">Temple Gate</span></a>,
+                    <a href="https://www.cgtrader.com/free-3d-models/architectural/door/a-piece-of-wooden-door-in-chinese-style"><span
+                            lang="de">Tempeltüren</span><span lang="en">Temple Doors</span></a>,
+                    <a href="https://www.turbosquid.com/3d-models/3d-model-thank-you-gift-chinese-new-year-no-texture-1843938#"><span
+                            lang="de">Papierlaternen</span><span lang="en">Paper Lanterns</span></a>,
+                    <a href="https://sketchfab.com/3d-models/japanese-wall-1f8ba4fa5635443f82d17a7cc118b811"><span
+                            lang="de">Steinmauer</span><span lang="en">Stone Wall</span></a>,
+                    <a href="https://www.cgtrader.com/free-3d-models/food/miscellaneous/japanese-ramen-stall"><span
+                            lang="de">Ramenstand</span><span lang="en">Ramen Stall</span></a>,
+                    <a href="https://free3d.com/3d-model/bench-with-backrest-80150.html"><span
+                            lang="de">Sitzbank</span><span lang="en">Bench</span></a>,
+                    <a href="https://www.cgtrader.com/free-3d-models/plant/pot-plant/collection-plant-vol-140"><span
+                            lang="de">Topfpflanze</span><span lang="en">Potted Plant</span></a>
                 </div>
                 <div>
-                    <a href="https://polyhaven.com/a/kloppenheim_02">HDRI</a>, Clay
+                    <a href="https://polyhaven.com/a/kloppenheim_02">HDRI</a>, <span lang="de">Lehm</span><span lang="en">Clay</span>
                     <a href="https://ambientcg.com/view?id=Clay001">(1)</a>
                     <a href="https://ambientcg.com/view?id=Clay004">(2)</a>,
-                    <a href="https://ambientcg.com/view?id=Fabric040">Fabric</a>,
-                    <a href="https://polyhaven.com/a/gravel_ground_01">Ground</a>,
-                    <a href="https://polyhaven.com/a/japanese_stone_wall">Stone Wall</a>,
-                    <a href="https://www.texturecan.com/details/281/">Paper</a>,
-                    <a href="https://www.texturecan.com/details/280/">Shoji Screen</a>,
-                    <a href="https://ambientcg.com/view?id=Plaster006">Plaster</a>,
-                    <a <a href="https://polyhaven.com/a/roof_tiles_14">Roof</a>,
-                    <a href="https://polyhaven.com/a/weathered_planks">Planks</a>, Wood <a href="https://ambientcg.com/view?id=Wood004">(1)</a> <a href="https://ambientcg.com/view?id=Wood006">(2)</a>
+                    <a href="https://ambientcg.com/view?id=Fabric040"><span lang="de">Stoff</span><span
+                            lang="en">Fabric</span></a>,
+                    <a href="https://polyhaven.com/a/gravel_ground_01"><span lang="de">Boden</span><span
+                            lang="en">Ground</span></a>,
+                    <a href="https://polyhaven.com/a/japanese_stone_wall"><span lang="de">Steinmauer</span><span
+                            lang="en">Stone Wall</span></a>,
+                    <a href="https://www.texturecan.com/details/281/"><span lang="de">Papier</span><span
+                            lang="en">Paper</span></a>,
+                    <a href="https://www.texturecan.com/details/280/"><span lang="de">Shoji Wand</span><span
+                            lang="en">Shoji Screen</span></a>,
+                    <a href="https://ambientcg.com/view?id=Plaster006"><span lang="de">Gips</span><span
+                            lang="en">Plaster</span></a>,
+                    <a <a href="https://polyhaven.com/a/roof_tiles_14"><span lang="de">Dach</span><span
+                            lang="en">Roof</span></a>,
+                    <a href="https://polyhaven.com/a/weathered_planks"><span lang="de">Bretter</span><span
+                            lang="en">Planks</span></a>, <span lang="de">Holz</span><span lang="en">Wood</span> <a href="https://ambientcg.com/view?id=Wood004">(1)</a> <a href="https://ambientcg.com/view?id=Wood006">(2)</a>
                 </div>
             </div>
         </div>
         <div class="contact">
-            Contact: <a href="https://github.com/git-gloomy">Tobias
+            <span lang="de">Kontakt</span><span lang="en">Contact</span>: <a href="https://github.com/git-gloomy">Tobias
                 Dick</a>,
             <a href="https://github.com/AntonWittig">Anton Wittig</a>
         </div>
@@ -211,8 +342,11 @@
         imageSwitcher("normal-img", "normal-on", "normal-off", "normal");
         imageSwitcher("striangle-img", "striangle-on", "striangle-off", "striangle");
         imageSwitcher("softlights-img", "softlights-on", "softlights-off", "softlights");
+        languageSwitcher();
     </script>
 </body>
+
+</html>
 
 </html>
 
